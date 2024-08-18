@@ -4,12 +4,13 @@ from words import *
 choices = {1: 'EN',
            2: 'PL',
            3: 'ES',
-           4: 'RU'}
+           4: 'RU',
+           5: 'UEN'}
 
 
 
 while True:
-    functions.display_menu(['English', 'Polski', 'Español', 'Русский'])
+    functions.display_menu(['English', 'Polski', 'Español', 'Русский', 'Uneducated English'])
     choice = int(input("Choose the number of your language: "))
     if choice in choices:
         lan = choices[choice]
